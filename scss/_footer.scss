@@ -1,0 +1,67 @@
+
+/** Footer **/
+
+    .footer_quote{
+        font-family: 'Eastman Trial';
+        font-weight: 600;
+        font-style: normal;
+        color: #fff;
+        text-transform:uppercase;
+        font-size: 25px;
+        padding:50px 40px;
+        text-align: center;
+    }
+    
+    .footer_quote a{
+        text-decoration:underline;
+        color: #f3f3f3;
+    }
+    
+    .footer_quote a:hover{
+        color: #FFA600;
+    }
+    
+    .footer_legal{
+        font-size: 10px;
+        font-family: 'Eastman Trial';
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+    }
+    
+    .footer_legal a{
+        color: #f3f3f3;
+        text-decoration: none;
+    }
+    
+    .footer_socialmedia{
+        padding-top:10px 0px;
+        text-align: center;
+        text-decoration: none;
+    }
+    .footer_socialmedia--icon{
+        color: #fff;
+        padding: 0px 5px;
+        font-size: 20px;
+    }
+    .footer_socialmedia--icon:hover{
+        color: #FFA600;
+    }
+    .footer-copyright{
+        font-size: 10px;
+        font-family: 'Eastman Trial';
+        font-weight: 500;
+        font-style: normal;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        align-self: center;
+        color: #f3f3f3;
+        text-align: center;
+    }
+    .footer-copyright a{
+        color: #f3f3f3;
+    }
+    .footer-copyright a:hover{
+        color: #ff9900;
+    }
+    

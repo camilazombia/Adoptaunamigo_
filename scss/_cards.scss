@@ -1,0 +1,8 @@
+@each $animal in blog_home1, blog_home2, blog_home3, blog_home4 {
+    .#{$animal} { /*operaciones*/
+          Background-image:  
+           url('../images/#{$animal}.png');
+           background-position: center;
+     background-size: cover;
+     }
+ }

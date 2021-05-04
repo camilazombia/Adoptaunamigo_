@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Eastman Trial';
+    src: url('EastmanTrial-Bold.woff2') format('woff2'),
+        url('EastmanTrial-Bold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eastman Trial';
+    src: url('EastmanTrial-Black.woff2') format('woff2'),
+        url('EastmanTrial-Black.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eastman Trial';
+    src: url('EastmanTrial-Italic.woff2') format('woff2'),
+        url('EastmanTrial-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eastman Trial';
+    src: url('EastmanTrial-Light.woff2') format('woff2'),
+        url('EastmanTrial-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eastman Trial';
+    src: url('EastmanTrial-MediumItalic.woff2') format('woff2'),
+        url('EastmanTrial-MediumItalic.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Eastman Trial';
+    src: url('EastmanTrial-Regular.woff2') format('woff2'),
+        url('EastmanTrial-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
