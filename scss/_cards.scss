@@ -82,19 +82,16 @@
         text-decoration:underline;
         color: #fff;
 
-}}
+}}}
 
-
-
-
-
-
-
-
-
+@media screen and (max-width: 320px){
+    .cards{
+        &-class{
+            font-size: 8px;
+            letter-spacing: 2px;
+    }
 }
-
-
+}
 .card{
     margin: 0px 10px 40px 0px;
     box-shadow: 0px 0px 20px rgba(209, 209, 209, 0.786);
@@ -115,12 +112,6 @@
         flex: 1 1 auto;
     }
 }
-    
-
-
-
-
-
 .cards_horizontal{
     background-color:#fff;
     border-radius: 2rem;

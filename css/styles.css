@@ -34,20 +34,12 @@ a {
     width: auto; }
   .navbar_name {
     color: #ff6600;
-    font-size: 1rem;
-    /*operaciones*/
+    font-size: 0.8rem;
     font-weight: 600;
     font-style: normal;
     text-transform: uppercase;
     padding-left: 0.5rem;
     padding-top: 0.5rem; }
-  .navbar_toggler {
-    border: 0px solid transparent;
-    background-image: url("../images/menu.svg"); }
-    .navbar_toggler:focus .navbar_toggler:hover {
-      outline: 0px dotted; }
-    .navbar_toggler-icon #navbar-toggler-icon {
-      background-image: url("../images/menu.svg"); }
   .navbar-item {
     color: #666666;
     list-style-type: none;
@@ -63,6 +55,9 @@ a {
     color: #ff6600;
     font-weight: 600;
     font-size: 0.8rem; }
+
+.navbar-toggler-icon {
+  background-image: url("../images/menu.svg"); }
 
 /** Footer **/
 .footer_quote {
@@ -264,6 +259,11 @@ a {
   .cards_link--a:hover {
     text-decoration: underline;
     color: #fff; }
+
+@media screen and (max-width: 320px) {
+  .cards-class {
+    font-size: 8px;
+    letter-spacing: 2px; } }
 
 .card {
   margin: 0px 10px 40px 0px;
