@@ -1,0 +1,65 @@
+
+/*Banners*/
+.banner{
+    font-family: $font-family;
+    color: $white-color;
+    &_title{
+        font-weight: bold;
+        font-style: normal;
+        text-transform:uppercase;
+        font-size: 80px;
+    }
+    &-image{
+        width: 600px;
+        height: auto;
+    }
+    
+    &--bold{
+        font-weight: 700;
+        font-style: normal;
+        font-size:16px;
+        padding-top: 15px;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+    }
+    &_text{
+        font-weight: 400;
+        font-style: normal;
+        font-size:16px;
+        padding-top: 15px;
+    &--button{
+        background-color: #f3f3f3;
+        border: none;
+        color: #ff6600;
+        padding: 10px 32px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        margin: 20px 0px;
+        cursor: pointer;
+        border-radius: 80px;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-style: normal;
+        font-size: 12px;
+        &:hover{
+            background-color: #FFA600;
+            color: #fff;
+            box-shadow: 0px 0px 15px #FFA600;
+        }
+    }
+}
+    
+}
+
+@media(max-width:768px){
+    .banner{
+        &-image{
+            width: 100%;
+            height: auto;
+            order: 1;}
+
+        &_title{
+            font-size: 2rem;
+            }
+}}

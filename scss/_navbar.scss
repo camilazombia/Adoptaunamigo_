@@ -1,10 +1,12 @@
+
+/*navbar*/
 .navbar{
     background-color: $ligth-color;
-.navbar_logo{ /*operaciones*/
+    &_logo{ /*operaciones*/
         height: $rem-4/2;
         width: $width-auto;
     }
-.navbar_name{
+    &_name{
         color:$primary-color;
         font-size: $rem-4/4;/*operaciones*/
         font-weight: $font-weight;
@@ -13,8 +15,34 @@
         padding-left: 0.5rem;
         padding-top:0.5rem;
     }
-.navbar_toggler {
+    &_toggler {
         border: 0px solid transparent;
         background-image:url("../images/menu.svg");
+        &:focus &:hover {
+            outline: 0px dotted;}
+        &-icon #navbar-toggler-icon
+        {
+            background-image:url("../images/menu.svg");
+        }
+    }
+    &-item{
+        color: #666666; 
+        list-style-type: none;
+        padding: 10px 20px;
     }
 }
+#nav-item--link{
+    color: #666666;
+    text-transform:$text-uppercase;
+    font-weight: 400;
+    font-size: 0.8rem;
+     &:hover,
+     &__active{
+     text-transform: $text-uppercase;
+    color:$primary-color;
+    font-weight: 600;
+    font-size: 0.8rem;
+    }
+}
+
+

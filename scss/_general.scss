@@ -1,0 +1,31 @@
+
+/*general*/
+html,body{
+    font-family:$font-family;
+    background-color: $ligth-color; 
+    overflow-x:hidden;
+    height:100%;
+    width:100%;
+  }
+::-webkit-scrollbar {
+    width: 10px;
+    &-track {
+        box-shadow: inset 0 0 4px #b3b3b3; 
+      }
+    &-thumb {
+        background:#ff6600; 
+        border-radius: 10px;
+        &:hover {
+            background:$primary-colorLigth; 
+          }
+      }
+}
+a{
+    text-decoration: none;
+}
+.bg-orange{
+    background-color:$primary-color;
+}
+.bg-orange--ligth{
+    background-color:$primary-colorLigth;
+}

@@ -1,11 +1,38 @@
-@charset "UTF-8";
+/*general*/
+html, body {
+  font-family: "Eastman Trial";
+  background-color: #f3f3f3;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%; }
+
+::-webkit-scrollbar {
+  width: 10px; }
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px #b3b3b3; }
+  ::-webkit-scrollbar-thumb {
+    background: #ff6600;
+    border-radius: 10px; }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #ff990085; }
+
+a {
+  text-decoration: none; }
+
+.bg-orange {
+  background-color: #ff6600; }
+
+.bg-orange--ligth {
+  background-color: #ff990085; }
+
+/*navbar*/
 .navbar {
   background-color: #f3f3f3; }
-  .navbar .navbar_logo {
+  .navbar_logo {
     /*operaciones*/
     height: 2rem;
     width: auto; }
-  .navbar .navbar_name {
+  .navbar_name {
     color: #ff6600;
     font-size: 1rem;
     /*operaciones*/
@@ -14,9 +41,28 @@
     text-transform: uppercase;
     padding-left: 0.5rem;
     padding-top: 0.5rem; }
-  .navbar .navbar_toggler {
+  .navbar_toggler {
     border: 0px solid transparent;
     background-image: url("../images/menu.svg"); }
+    .navbar_toggler:focus .navbar_toggler:hover {
+      outline: 0px dotted; }
+    .navbar_toggler-icon #navbar-toggler-icon {
+      background-image: url("../images/menu.svg"); }
+  .navbar-item {
+    color: #666666;
+    list-style-type: none;
+    padding: 10px 20px; }
+
+#nav-item--link {
+  color: #666666;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 0.8rem; }
+  #nav-item--link:hover, #nav-item--link__active {
+    text-transform: uppercase;
+    color: #ff6600;
+    font-weight: 600;
+    font-size: 0.8rem; }
 
 /** Footer **/
 .footer_quote {
@@ -28,13 +74,11 @@
   font-size: 25px;
   padding: 50px 40px;
   text-align: center; }
-
-.footer_quote a {
-  text-decoration: underline;
-  color: #f3f3f3; }
-
-.footer_quote a:hover {
-  color: #FFA600; }
+  .footer_quote a {
+    text-decoration: underline;
+    color: #f3f3f3; }
+    .footer_quote a:hover {
+      color: #FFA600; }
 
 .footer_legal {
   font-size: 10px;
@@ -42,23 +86,20 @@
   font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 4px; }
-
-.footer_legal a {
-  color: #f3f3f3;
-  text-decoration: none; }
+  .footer_legal a {
+    color: #f3f3f3;
+    text-decoration: none; }
 
 .footer_socialmedia {
   padding-top: 10px 0px;
   text-align: center;
   text-decoration: none; }
-
-.footer_socialmedia--icon {
-  color: #fff;
-  padding: 0px 5px;
-  font-size: 20px; }
-
-.footer_socialmedia--icon:hover {
-  color: #FFA600; }
+  .footer_socialmedia--icon {
+    color: #fff;
+    padding: 0px 5px;
+    font-size: 20px; }
+    .footer_socialmedia--icon:hover {
+      color: #FFA600; }
 
 .footer-copyright {
   font-size: 10px;
@@ -70,36 +111,386 @@
   align-self: center;
   color: #f3f3f3;
   text-align: center; }
+  .footer-copyright a {
+    color: #f3f3f3; }
+    .footer-copyright a:hover {
+      color: #fff; }
 
-.footer-copyright a {
-  color: #f3f3f3; }
+/*Banners*/
+.banner {
+  font-family: "Eastman Trial";
+  color: #fff; }
+  .banner_title {
+    font-weight: bold;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 80px; }
+  .banner-image {
+    width: 600px;
+    height: auto; }
+  .banner--bold {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 16px;
+    padding-top: 15px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase; }
+  .banner_text {
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    padding-top: 15px; }
+    .banner_text--button {
+      background-color: #f3f3f3;
+      border: none;
+      color: #ff6600;
+      padding: 10px 32px;
+      text-align: center;
+      text-decoration: none;
+      font-size: 16px;
+      margin: 20px 0px;
+      cursor: pointer;
+      border-radius: 80px;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-style: normal;
+      font-size: 12px; }
+      .banner_text--button:hover {
+        background-color: #FFA600;
+        color: #fff;
+        box-shadow: 0px 0px 15px #FFA600; }
 
-.footer-copyright a:hover {
-  color: #ff9900; }
+@media (max-width: 768px) {
+  .banner-image {
+    width: 100%;
+    height: auto;
+    order: 1; }
+  .banner_title {
+    font-size: 2rem; } }
 
-.blog_home1 {
+/*Cards*/
+.Adopta_amigo_blog_home_1 {
   /*operaciones*/
-  Background-image: url("../images/blog_home1.png");
+  Background-image: url("../images/Adopta_amigo_blog_home_1.jpg");
   background-position: center;
   background-size: cover; }
 
-.blog_home2 {
+.Adopta_amigo_blog_home_2 {
   /*operaciones*/
-  Background-image: url("../images/blog_home2.png");
+  Background-image: url("../images/Adopta_amigo_blog_home_2.jpg");
   background-position: center;
   background-size: cover; }
 
-.blog_home3 {
+.Adopta_amigo_blog_home_3 {
   /*operaciones*/
-  Background-image: url("../images/blog_home3.png");
+  Background-image: url("../images/Adopta_amigo_blog_home_3.jpg");
   background-position: center;
   background-size: cover; }
 
-.blog_home4 {
+.Adopta_amigo_blog_home_4 {
   /*operaciones*/
-  Background-image: url("../images/blog_home4.png");
+  Background-image: url("../images/Adopta_amigo_blog_home_4.jpg");
   background-position: center;
   background-size: cover; }
+
+.cards-horizontal {
+  display: flex;
+  flex: 1 1 auto; }
+
+.cards_header {
+  width: 100%;
+  padding: 10px 0px 40px 0px; }
+  .cards_header--title {
+    font-family: 'Eastman Trial';
+    font-weight: 700;
+    font-style: normal;
+    color: #ff6600;
+    text-transform: uppercase;
+    font-size: 40px; }
+
+.cards_title {
+  font-family: 'Eastman Trial';
+  font-weight: 800;
+  font-style: normal;
+  font-size: 30px;
+  text-transform: uppercase;
+  color: #ff6600; }
+
+.cards_type {
+  font-family: 'Eastman Trial';
+  font-weight: normal;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #666666; }
+
+.cards_text {
+  font-family: 'Eastman Trial';
+  font-weight: normal;
+  font-size: 0.9rem;
+  color: #666666; }
+
+.cards_socialmedia {
+  padding-top: 14px;
+  text-align: left; }
+  .cards_socialmedia--icon {
+    color: #ff6600;
+    padding: 0px 5px;
+    font-size: 20px; }
+    .cards_socialmedia--icon:hover {
+      color: #FFA600; }
+
+.cards-class {
+  color: #fff;
+  background-color: #ff6600;
+  margin: 10px 0px;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-family: 'Eastman Trial';
+  font-weight: normal;
+  font-style: italic;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  display: inline-block; }
+
+.cards_link--a {
+  font-family: 'Eastman Trial';
+  font-weight: 600;
+  font-style: normal;
+  color: #fff;
+  font-size: 2.6rem;
+  line-height: 40px;
+  text-transform: uppercase; }
+  .cards_link--a:hover {
+    text-decoration: underline;
+    color: #fff; }
+
+.card {
+  margin: 0px 10px 40px 0px;
+  box-shadow: 0px 0px 20px rgba(209, 209, 209, 0.786);
+  border-radius: 2rem; }
+  .card-img-top {
+    border-radius: 2rem 2rem 0rem 0rem; }
+  .card_body {
+    background-color: #ffff;
+    border-radius: 0rem 0rem 2rem 2rem; }
+  .card_body--orange {
+    background-color: #ff6600;
+    border-radius: 0rem 0rem 2rem 2rem; }
+  .card-horizontal {
+    display: flex;
+    flex: 1 1 auto; }
+
+.cards_horizontal {
+  background-color: #fff;
+  border-radius: 2rem;
+  margin: 0px 10px 40px 0px;
+  box-shadow: 0px 0px 20px rgba(209, 209, 209, 0.786); }
+  .cards_horizontal--title {
+    font-family: 'Eastman Trial';
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: #ff6600;
+    padding-top: 15px; }
+  .cards_horizontal_text {
+    color: #666666;
+    font-family: 'Eastman Trial';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    padding-top: 15px; }
+  .cards_horizontal--button {
+    background-color: #ff6600;
+    box-shadow: 0px 0px 20px rgba(209, 209, 209, 0.786); }
+  .cards_horizontal--link--a {
+    font-family: 'Eastman Trial';
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    padding-top: 20px; }
+    .cards_horizontal--link--a:hover {
+      text-decoration: underline;
+      color: #fff; }
+  .cards_horizontal--type {
+    font-family: 'Eastman Trial';
+    font-weight: normal;
+    font-style: italic;
+    text-transform: uppercase;
+    color: #666666;
+    font-size: 1.2rem; }
+  .cards_horizontal--orange {
+    background-color: #ff6600;
+    border-radius: 2rem; }
+
+.cards-horizontal-image {
+  width: auto;
+  border-radius: 2rem 0rem 0rem 2rem; }
+
+.cards-horizontal--type {
+  font-family: 'Eastman Trial';
+  font-weight: normal;
+  font-style: italic;
+  text-transform: uppercase;
+  color: #666666; }
+
+.blog_link {
+  padding-top: 0.2rem; }
+  .blog_link--a {
+    color: #ff6600;
+    font-family: 'Eastman Trial';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 5px; }
+    .blog_link--a:hover {
+      text-decoration: underline; }
+
+.cards_button--LinkImage {
+  width: 80%;
+  border-radius: 20px; }
+
+.cards_link {
+  padding: 5px 30px 5px 30px; }
+
+.cards_link {
+  padding: 5px 30px 5px 30px; }
+
+@media screen and (max-width: 900px) {
+  .cards_link--a {
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem; } }
+
+/*Contacto*/
+.contact_title {
+  font-family: 'Eastman Trial';
+  font-weight: 600;
+  font-style: normal;
+  color: #ff6600;
+  text-transform: uppercase;
+  font-size: 40px; }
+
+.contact_text {
+  font-family: 'Eastman Trial';
+  font-weight: 400;
+  font-style: normal;
+  color: #666666;
+  font-size: 16px; }
+
+.contact_form--button {
+  background-color: #f3f3f3;
+  border: none;
+  color: #ff6600;
+  padding: 10px 32px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 20px 0px;
+  cursor: pointer;
+  border-radius: 80px;
+  text-transform: uppercase;
+  font-family: 'Eastman Trial';
+  font-weight: 600;
+  font-style: normal;
+  font-size: 12px;
+  width: 100%; }
+  .contact_form--button:hover {
+    background-color: #FFA600;
+    color: #fff;
+    box-shadow: 0px 0px 15px #FFA600; }
+
+/*FomularioContacto*/
+label {
+  display: inline;
+  margin-bottom: .5rem; }
+
+.form_label {
+  width: 100%;
+  font-family: 'Eastman Trial';
+  font-weight: 600;
+  font-style: normal;
+  color: #ff6600;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding-left: 3px;
+  padding-top: 10px; }
+  .form_label--radio {
+    width: 100%;
+    font-family: 'Eastman Trial';
+    font-weight: normal;
+    font-style: normal;
+    color: #666;
+    font-size: 0.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+
+.form_input {
+  width: 100%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 60px;
+  box-sizing: border-box;
+  font-size: 12px;
+  color: #666666;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif; }
+  .form_input:hover :active {
+    border: 1px solid #ff6600;
+    color: #d39e7b; }
+
+textarea, select, input, button {
+  /*Quitar los recuadros azules al seleccionar*/
+  outline: none; }
+
+:focus {
+  outline-color: transparent;
+  outline-style: none; }
+
+.option {
+  list-style: none;
+  padding-top: 1rem; }
+
+.AboutUs {
+  font-family: 'Eastman Trial'; }
+  .AboutUs_title {
+    font-weight: 800;
+    font-style: normal;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #ff6600; }
+  .AboutUs_text {
+    font-weight: normal;
+    font-style: normal;
+    color: #666666;
+    font-size: 16px; }
+
+.howto_title {
+  font-family: 'Eastman Trial';
+  font-weight: 700;
+  font-style: normal;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 40px; }
+
+.howto_icon {
+  width: auto;
+  height: 30%; }
+
+.howto_text {
+  color: #fff;
+  font-family: 'Eastman Trial';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px; }
 
 /*
 -------------------------------------
@@ -212,427 +603,3 @@ CSS con las animaciones
   background-position: -99.99% 0;
   text-decoration: none;
   color: #ff6600; }
-
-body {
-  font-family: Eastman Trial;
-  background-color: #f3f3f3; }
-
-/* CSS ORIGINAL lo dejo aquí para ir cambiandolo después para la siguiente entrega*/
-/* General */
-a {
-  text-decoration: none; }
-
-.bg-orange {
-  background-color: #ff6600; }
-
-.bg-orange--ligth {
-  background-color: #ff990085; }
-
-.navbar_toggler {
-  border: 0px solid transparent;
-  background-image: url("../images/menu.svg"); }
-
-.navbar_toggler:focus {
-  outline: 0px dotted; }
-
-#navbar-toggler-icon,
-.navbar_toggler-icon {
-  background-image: url("../images/menu.svg"); }
-
-.navbar-item {
-  color: #666666;
-  list-style-type: none;
-  padding: 10px 20px; }
-
-#nav-item--link {
-  color: #666666;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 0.8rem; }
-
-#nav-item--link:hover,
-#nav-item--link__active {
-  text-transform: uppercase;
-  color: #ff6600;
-  font-weight: 600;
-  font-size: 0.8rem; }
-
-/*Banners*/
-.banner_title {
-  font-family: 'Eastman Trial';
-  font-weight: 25rem;
-  font-style: normal;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 80px; }
-
-@media (max-width: 767px) {
-  .banner_title {
-    font-size: 3rem; } }
-
-.banner_text {
-  font-family: 'Eastman Trial';
-  font-weight: 400;
-  font-style: normal;
-  color: #fff;
-  font-size: 16px;
-  padding-top: 15px; }
-
-.banner_text--bold {
-  font-family: 'Eastman Trial';
-  font-weight: 700;
-  font-style: normal;
-  color: #fff;
-  font-size: 16px;
-  padding-top: 15px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase; }
-
-.banner-image {
-  width: 600px;
-  height: auto; }
-
-@media (max-width: 767px) {
-  .banner-image {
-    width: 85%;
-    height: auto;
-    order: 1; } }
-
-.banner_text--button {
-  background-color: #f3f3f3;
-  border: none;
-  color: #ff6600;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 20px 0px;
-  cursor: pointer;
-  border-radius: 80px;
-  text-transform: uppercase;
-  font-family: 'Eastman Trial';
-  font-weight: 600;
-  font-style: normal;
-  font-size: 12px; }
-
-.banner_text--button:hover {
-  background-color: #FFA600;
-  color: #fff;
-  box-shadow: 0px 0px 15px #FFA600; }
-
-/**Cards**/
-/**Cards vertical**/
-.card-img-top {
-  border-radius: 2rem 2rem 0rem 0rem; }
-
-.card_body {
-  background-color: #ffff;
-  border-radius: 0rem 0rem 2rem 2rem; }
-
-.card_body--orange {
-  background-color: #ff6600;
-  border-radius: 0rem 0rem 2rem 2rem; }
-
-.cards_title {
-  font-family: 'Eastman Trial';
-  font-weight: 800;
-  font-style: normal;
-  font-size: 40px;
-  text-transform: uppercase;
-  color: #ff6600; }
-
-.cards_type {
-  font-family: 'Eastman Trial';
-  font-weight: normal;
-  font-style: italic;
-  text-transform: uppercase;
-  color: #666666; }
-
-.cards_text {
-  font-family: 'Eastman Trial';
-  font-weight: normal;
-  font-size: 0.9rem;
-  color: #666666; }
-
-.cards_button--LinkImage {
-  width: 80%;
-  border-radius: 20px; }
-
-.cards_link {
-  padding: 5px 30px 5px 30px; }
-
-.cards_link--a {
-  font-family: 'Eastman Trial';
-  font-weight: 600;
-  font-style: normal;
-  color: #fff;
-  font-size: 40px;
-  line-height: 40px;
-  text-transform: uppercase; }
-
-.cards_link--a:hover {
-  text-decoration: underline; }
-
-.cards_socialmedia {
-  padding-top: 14px;
-  text-align: left; }
-
-.cards_socialmedia--icon {
-  color: #ff6600;
-  padding: 0px 5px;
-  font-size: 20px; }
-
-.cards_socialmedia--icon:hover {
-  color: #FFA600; }
-
-.cards-class {
-  color: #fff;
-  background-color: #ff6600;
-  margin: 10px 0px;
-  padding: 4px 10px;
-  border-radius: 20px;
-  font-family: 'Eastman Trial';
-  font-weight: normal;
-  font-style: italic;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  display: inline-block; }
-
-.cards_link {
-  padding: 5px 30px 5px 30px; }
-
-.cards_link--a {
-  font-family: 'Eastman Trial';
-  font-weight: 600;
-  font-style: normal;
-  color: #fff;
-  font-size: 3rem;
-  line-height: 2.5rem;
-  text-transform: uppercase; }
-
-.cards_link--a:hover {
-  text-decoration: underline;
-  color: #fff; }
-
-@media screen and (max-width: 900px) {
-  .cards_link--a {
-    font-size: 2rem;
-    line-height: 2rem;
-    letter-spacing: 0.2rem; } }
-
-/*Imagénes Cards index | seccion Blog*/
-.cards_header {
-  width: 100%;
-  padding: 10px 0px 40px 0px; }
-
-.cards_header--title {
-  font-family: 'Eastman Trial';
-  font-weight: 40px;
-  font-style: normal;
-  color: #ff6600;
-  text-transform: uppercase;
-  font-size: 40px; }
-
-.cards_horizontal {
-  width: 100%;
-  height: 200px;
-  background-color: #fff;
-  border-radius: 20px;
-  margin: 0px 10px 40px 0px;
-  box-shadow: 0px 0px 20px rgba(209, 209, 209, 0.786); }
-
-.cardsHorizontal_text {
-  color: #666666;
-  font-family: 'Eastman Trial';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px;
-  padding-top: 15px;
-  margin-left: 16rem; }
-
-@media (max-width: 765px) {
-  .cardsHorizontal_text {
-    margin-left: 13rem;
-    margin-right: 2rem; } }
-
-.cards_horizontal--title {
-  font-family: 'Eastman Trial';
-  font-weight: 800;
-  font-style: normal;
-  font-size: 25px;
-  text-transform: uppercase;
-  color: #ff6600;
-  padding-top: 15px; }
-
-.cards_horizontal--type {
-  font-family: 'Eastman Trial';
-  font-weight: normal;
-  font-style: italic;
-  text-transform: uppercase;
-  color: #666666; }
-
-.blog_link {
-  padding-top: 0.2rem; }
-
-.blog_link--a {
-  color: #ff6600;
-  font-family: 'Eastman Trial';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 5px; }
-
-.blog_link--a:hover {
-  text-decoration: underline; }
-
-.cards_horizontal--button {
-  height: auto;
-  background-color: #ff6600;
-  box-shadow: 0px 0px 20px rgba(209, 209, 209, 0.786); }
-
-.cards_horizontal--link {
-  padding: 50px 30px 5px 60px; }
-
-.cards_horizontal--link a,
-.cards_horizontal--link--a {
-  font-family: 'Eastman Trial';
-  font-weight: 600;
-  font-style: normal;
-  color: #fff;
-  font-size: 30px;
-  line-height: 40px;
-  text-transform: uppercase;
-  padding-top: 20px; }
-
-/*Sobre Nosotros*/
-.AboutUs_title {
-  font-family: 'Eastman Trial';
-  font-weight: 800;
-  font-style: normal;
-  font-size: 30px;
-  text-transform: uppercase;
-  color: #ff6600; }
-
-.AboutUs_text {
-  font-family: 'Eastman Trial';
-  font-weight: normal;
-  font-style: normal;
-  color: #666666;
-  font-size: 16px; }
-
-/*Sobre Nosotros Iconos*/
-.howto_title {
-  font-family: 'Eastman Trial';
-  font-weight: 40px;
-  font-style: normal;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 40px; }
-
-.howto_icon {
-  width: auto;
-  height: 30%; }
-
-.howto_text {
-  color: #fff;
-  font-family: 'Eastman Trial';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 16px; }
-
-/*Contacto*/
-.contact_title {
-  font-family: 'Eastman Trial';
-  font-weight: 60px;
-  font-style: normal;
-  color: #ff6600;
-  text-transform: uppercase;
-  font-size: 40px; }
-
-.contact_text {
-  font-family: 'Eastman Trial';
-  font-weight: 400;
-  font-style: normal;
-  color: #666666;
-  font-size: 16px; }
-
-/*FomularioContacto*/
-label {
-  display: inline;
-  margin-bottom: .5rem; }
-
-.form_label {
-  width: 100%;
-  font-family: 'Eastman Trial';
-  font-weight: 600;
-  font-style: normal;
-  color: #ff6600;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  padding-left: 3px;
-  padding-top: 10px; }
-
-.form_input {
-  width: 100%;
-  padding: 10px 20px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 60px;
-  box-sizing: border-box;
-  font-size: 12px;
-  color: #666666;
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-family: Arial, Helvetica, sans-serif; }
-
-.form_input:active, .form_input:hover {
-  border: 1px solid #ff6600;
-  color: #ff6600; }
-
-textarea, select, input, button {
-  /*Quitar los recuadros azules al seleccionar*/
-  outline: none; }
-
-:focus {
-  outline-color: transparent;
-  outline-style: none; }
-
-.form_label--radio {
-  width: 100%;
-  font-family: 'Eastman Trial';
-  font-weight: normal;
-  font-style: normal;
-  color: #666;
-  font-size: 0.6rem;
-  text-transform: uppercase;
-  letter-spacing: 1px; }
-
-.option {
-  list-style: none;
-  padding-top: 1rem; }
-
-.contact_form--button {
-  background-color: #f3f3f3;
-  border: none;
-  color: #ff6600;
-  padding: 10px 32px;
-  text-align: center;
-  text-decoration: none;
-  font-size: 16px;
-  margin: 20px 0px;
-  cursor: pointer;
-  border-radius: 80px;
-  text-transform: uppercase;
-  font-family: 'Eastman Trial';
-  font-weight: 600;
-  font-style: normal;
-  font-size: 12px;
-  width: 100%; }
-
-.contact_form--button:hover {
-  background-color: #FFA600;
-  color: #fff;
-  box-shadow: 0px 0px 15px #FFA600; }

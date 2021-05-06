@@ -1,8 +1,225 @@
-@each $animal in blog_home1, blog_home2, blog_home3, blog_home4 {
+
+/*Cards*/
+
+@each $animal in Adopta_amigo_blog_home_1, Adopta_amigo_blog_home_2, Adopta_amigo_blog_home_3, Adopta_amigo_blog_home_4 {
     .#{$animal} { /*operaciones*/
           Background-image:  
-           url('../images/#{$animal}.png');
+           url('../images/#{$animal}.jpg');
            background-position: center;
      background-size: cover;
      }
  }
+
+ .cards{
+    &-horizontal {
+    display: flex;
+    flex: 1 1 auto;}
+    &_header{
+    width: 100%;
+    padding: 10px 0px 40px 0px;
+    &--title{
+        font-family: 'Eastman Trial';
+        font-weight: 700;
+        font-style: normal;
+        color:#ff6600;
+        text-transform:uppercase;
+        font-size: 40px;
+    }}
+    &_title{
+        font-family: 'Eastman Trial';
+        font-weight: 800;
+        font-style: normal;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #ff6600;
+    }
+    &_type{
+        font-family: 'Eastman Trial';
+        font-weight: normal;
+        font-style: italic;
+        text-transform: uppercase;
+        color: #666666;
+    }
+    
+    &_text{
+        font-family: 'Eastman Trial';
+        font-weight: normal;
+        font-size: 0.9rem;
+        color: #666666;
+    }
+    &_socialmedia{
+        padding-top:14px;
+        text-align: left;
+        &--icon{
+        color: #ff6600;
+        padding: 0px 5px;
+        font-size: 20px;
+        &:hover{
+            color: #FFA600;
+        }}}
+    &-class{
+    color: #fff;
+    background-color: #ff6600;
+    margin: 10px 0px;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-family: 'Eastman Trial';
+    font-weight: normal;
+    font-style: italic;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;}
+    &_link--a{
+    font-family: 'Eastman Trial';
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+    font-size: 2.6rem;
+    line-height: 40px;
+    text-transform: uppercase;
+    &:hover{
+        text-decoration:underline;
+        color: #fff;
+
+}}
+
+
+
+
+
+
+
+
+
+}
+
+
+.card{
+    margin: 0px 10px 40px 0px;
+    box-shadow: 0px 0px 20px rgba(209, 209, 209, 0.786);
+    border-radius: 2rem;
+    &-img-top {
+        border-radius: 2rem 2rem 0rem 0rem;
+    }
+    &_body{
+        background-color: #ffff;
+        border-radius: 0rem 0rem 2rem 2rem;
+    }
+    &_body--orange{
+        background-color: #ff6600;
+        border-radius: 0rem 0rem 2rem 2rem;
+    }
+    &-horizontal {
+        display: flex;
+        flex: 1 1 auto;
+    }
+}
+    
+
+
+
+
+
+.cards_horizontal{
+    background-color:#fff;
+    border-radius: 2rem;
+    margin: 0px 10px 40px 0px;
+    box-shadow: 0px 0px 20px rgba(209, 209, 209, 0.786);
+    &--title{
+        font-family: 'Eastman Trial';
+        font-weight: 800;
+        font-style: normal;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        color: #ff6600;
+        padding-top: 15px;
+    }
+    &_text{
+    color: #666666;
+    font-family: 'Eastman Trial';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 16px;
+    padding-top: 15px;}
+    &--button{
+        background-color:#ff6600; 
+        box-shadow: 0px 0px 20px rgba(209, 209, 209, 0.786);}
+    &--link--a {
+    font-family: 'Eastman Trial';
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+    font-size: 2rem;
+    line-height: 1rem;
+    text-transform: uppercase;
+    padding-top:20px ;
+    &:hover{
+        text-decoration: underline;
+        color: #fff;
+    }}
+    &--type{
+        font-family: 'Eastman Trial';
+        font-weight: normal;
+        font-style: italic;
+        text-transform: uppercase;
+        color: #666666;
+        font-size: 1.2rem;
+    }
+    &--orange {
+        background-color: #ff6600;
+        border-radius: 2rem;
+        }}
+.cards-horizontal{
+    &-image{
+        width: auto;
+        border-radius: 2rem 0rem 0rem 2rem;}
+    &--type{
+        font-family: 'Eastman Trial';
+        font-weight: normal;
+        font-style: italic;
+        text-transform: uppercase;
+        color: #666666;
+    }
+}
+.blog{
+&_link{
+    padding-top: 0.2rem;
+&--a{
+    color:#ff6600;
+    font-family: 'Eastman Trial';
+    font-weight: normal;
+    font-style: normal;
+    font-size:14px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    &:hover{
+    text-decoration:underline;
+}}
+}
+}
+
+
+
+
+.cards_button--LinkImage{
+    width: 80%;
+    border-radius: 20px;
+}
+.cards_link{
+    padding: 5px 30px 5px 30px;
+}
+
+
+
+.cards_link{
+    padding: 5px 30px 5px 30px;
+}
+
+@media screen and (max-width: 900px){
+.cards_link--a{
+    font-size:2rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem;
+
+}}

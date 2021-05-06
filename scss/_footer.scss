@@ -1,7 +1,7 @@
 
 /** Footer **/
-
-    .footer_quote{
+.footer{
+    &_quote{
         font-family: 'Eastman Trial';
         font-weight: 600;
         font-style: normal;
@@ -10,44 +10,39 @@
         font-size: 25px;
         padding:50px 40px;
         text-align: center;
+        & a{
+            text-decoration:underline;
+            color: #f3f3f3;
+            &:hover{
+                color: #FFA600;
+            }
+        }
     }
-    
-    .footer_quote a{
-        text-decoration:underline;
-        color: #f3f3f3;
-    }
-    
-    .footer_quote a:hover{
-        color: #FFA600;
-    }
-    
-    .footer_legal{
+    &_legal{
         font-size: 10px;
         font-family: 'Eastman Trial';
         font-weight: 400;
         text-transform: uppercase;
         letter-spacing: 4px;
+        & a {
+            color: #f3f3f3;
+            text-decoration: none;
+        }
     }
-    
-    .footer_legal a{
-        color: #f3f3f3;
-        text-decoration: none;
-    }
-    
-    .footer_socialmedia{
+    &_socialmedia{
         padding-top:10px 0px;
         text-align: center;
         text-decoration: none;
+        &--icon{
+            color: #fff;
+            padding: 0px 5px;
+            font-size: 20px;
+            &:hover{
+                color: #FFA600;
+            }
+        }
     }
-    .footer_socialmedia--icon{
-        color: #fff;
-        padding: 0px 5px;
-        font-size: 20px;
-    }
-    .footer_socialmedia--icon:hover{
-        color: #FFA600;
-    }
-    .footer-copyright{
+    &-copyright{
         font-size: 10px;
         font-family: 'Eastman Trial';
         font-weight: 500;
@@ -55,13 +50,13 @@
         text-transform: uppercase;
         letter-spacing: 4px;
         align-self: center;
-        color: #f3f3f3;
+        color: $ligth-color;
         text-align: center;
+        & a{
+            color: $ligth-color;
+            &:hover{
+                color: $white-color;
+            }
+        }
     }
-    .footer-copyright a{
-        color: #f3f3f3;
-    }
-    .footer-copyright a:hover{
-        color: #ff9900;
-    }
-    
+}

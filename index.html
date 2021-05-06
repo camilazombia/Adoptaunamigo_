@@ -17,6 +17,8 @@
 ayudar a todos los animales, no solo a buscar una familia sino también
 un amigo como tú, ¡Ingresa ahora y se parte de ella!">
 <title>AdoptaUnAmigo.co</title>
+<!--FAV ICON-->
+<link rel="shortcut icon" href="images/adopta_un_amigo_logo.svg">
 </head>
 <body>
 <header>
@@ -53,16 +55,16 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
 </header>
 <main>
 <!--Banner Principal-->
-<section class="container-fluid bg-orange py-5 px-5">
+<section class="banner container-fluid bg-orange py-5 px-5">
   <div class="row align-items-center banner-focus">
     <div class="col-md-6 order-md-1 order-12">
       <!--Banner title-->
-      <h2 class="banner_title">Aquí encontrarás 
+      <h2 class="banner banner_title">Aquí encontrarás 
         <p><span class="txt-rotate" data-period="2000"
-        data-rotate='[ "un Amigo.", "Amor.", "Historias.", "Diversión!" ]'></span></p>
+        data-rotate='[ "un Amigo!", "Amor!", "Historias!", "Diversión!" ]'></span></p>
       </h2>
       <!--Banner body-->
-      <p class="banner_text"><bold class="banner_text--bold">Adoptaunamigo.co</bold> es un lugar donde podrás encontrar
+      <p class="banner banner_text"><bold class="banner_text--bold">Adoptaunamigo.co</bold> es un lugar donde podrás encontrar
         amigos de todo el mundo, pero no cualquier tipo de amigo, los más fieles, divertidos,
         cariñosos, nuestros amigos animalezcos!
        </p>
@@ -77,6 +79,7 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
 <section class="container my-5 mx-auto">
   <div class="row justify-content-center">
     <div class="col-md-4 col-sm-6 col-6 pb-3" style="width: 18rem;">
+      <div class="card">
         <img class="card-img-top cards-image" src="images/Adopta_amigo_pato_.jpg" alt="Card image cap">
         <div class="card-body card_body">
           <h3 class="cards_title">paco,</h3>
@@ -85,8 +88,10 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
             consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
           <h5 class="cards-class">apadrinamiento</h5>
         </div>
+      </div>
     </div>
     <div class="col-md-4 col-sm-6 col-6 pb-3" style="width: 18rem;">
+      <div class="card">
       <img class="card-img-top cards-image" src="images/Adopta_amigo_loretto_.jpg" alt="Card image cap">
         <div class="card-body card_body">
           <h3 class="cards_title">paco,</h3>
@@ -95,20 +100,23 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
             consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
           <h5 class="cards-class">apadrinamiento</h5>
         </div>
+      </div>
     </div>
     <div class="col-md-4 d-none d-sm-block" style="width: 18rem;">
+      <div class="card bg-orange">
       <img class="card-img-top cards-image" src="images/Adopta_amigo_Button_pig.jpg" alt="Card image cap">
         <div class="card-body card_body--orange" id="card_body--orange">
           <h5 class="">
             <a class="cards_link--a" href="./pages/nuestrosamigos.html">Cónoce más amigos ></a>
           </h5>
         </div>
+      </div>
     </div>
   </div>
 </section>
 <!--/Cards Vert-->
 <!--Banner Secundario-->
-<section class="container-fluid bg-orange py-5 px-5 item">
+<section class="banner container-fluid bg-orange py-5 px-5 item">
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1 order-12">
       <!--Banner title-->
@@ -118,7 +126,7 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
         amigos de todo el mundo, pero no cualquier tipo de amigo, los más fieles, divertidos,
         cariñosos, nuestros amigos animalezcos!
        </p>
-       <button class= "banner_text--button pulsate-btn">Cónoce más</button>
+       <button onclick="window.location.href='./pages/sobrenosotros.html'" class= "banner_text--button pulsate-btn">Cónoce más</button>
     </div>
     <!--Banner image-->
     <div class="col-md-6 order-md-12 order-1 px-3">
@@ -127,46 +135,67 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
   </div>
 </section>
 <!--/Banner Secundario-->
+
 <!--Cards Horiz-->
-<section class="cards container">
+<section class="cards container mt-4">
   <div class="cards_header row col-12">
       <h2 class="cards_header--title">Blog</h2>
   </div>
-  <div class="row justify-content-around">
-  <div class="cards_horizontal col-xs-12 col-lg-5 blog_home1">
-      <div class="cardsHorizontal_text">
-      <h3 class="cards_horizontal--title">LA NUEVA VIDA DE PACO</h3>
-      <h4 class="cards_horizontal--type">EL PATO</h4>
-      <div class="blog_link">
-          <a class="blog_link--a">Lee más...></a>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 col-lg-6">
+      <div class="card cards_horizontal">
+      <div class="card-horizontal">
+          <div class="img-square-wrapper">
+              <img class="cards-horizontal-image" src="./images/Adopta_amigo_blog_home_1.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="cards_horizontal--title">LA NUEVA VIDA DE PACO</h3>
+            <h4 class="cards_horizontal--type">EL PATO</h4>
+            <a> <p class="blog_link--a">Lee más...></p></a>
+          </div>
       </div>
       </div>
-  </div>
-  <div class="cards_horizontal col-xs-12 col-lg-5 blog_home2">
-    <div class="cardsHorizontal_text">
-    <h3 class="cards_horizontal--title">Así se vive con rocco</h3>
-    <h4 class="cards_horizontal--type">un pinsher</h4>
-    <div class="blog_link">
-        <a class="blog_link--a">Lee más...></a>
     </div>
-    </div>
-  </div>
-  </div>
-  <div class="row justify-content-around">
-    <div class="cards_horizontal col-xs-12 col-lg-5 blog_home3">
-        <div class="cardsHorizontal_text">
-        <h3 class="cards_horizontal--title">LA NUEVA VIDA DE PACO</h3>
-        <h4 class="cards_horizontal--type">EL PATO</h4>
-        <div class="blog_link">
-            <a class="blog_link--a">Lee más...></a>
-        </div>
-        </div>
-    </div>
-    <div class="cards_horizontal col-xs-12 col-lg-5 cards_horizontal--button blog_home4">
-      <div class="cardsHorizontal_text">
-        <h3><a class="cards_horizontal--link--a" href="./pages/nuestrosamigos.html">Lee más historias ></a></h3>
+    <div class="col-xs-12 col-lg-6">
+      <div class="card cards_horizontal">
+      <div class="card-horizontal">
+          <div class="img-square-wrapper">
+              <img class="cards-horizontal-image" src="./images/Adopta_amigo_blog_home_2.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="cards_horizontal--title">Así se vive con rocco</h3>
+            <h4 class="cards_horizontal--type">un pinsher</h4>
+            <a> <p class="blog_link--a">Lee más...></p></a>
+          </div>
+      </div>
       </div>
     </div>
+    <div class="col-xs-12 col-lg-6">
+      <div class="card cards_horizontal">
+      <div class="card-horizontal">
+          <div class="img-square-wrapper">
+              <img class="cards-horizontal-image" src="./images/Adopta_amigo_blog_home_3.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3 class="cards_horizontal--title">LA NUEVA VIDA DE PACO</h3>
+            <h4 class="cards_horizontal--type">EL PATO</h4>
+            <a> <p class="blog_link--a">Lee más...></p></a>
+          </div>
+      </div>
+      </div>
+    </div>
+    <div class="col-xs-12 col-lg-6">
+      <div class="card cards_horizontal ">
+      <div class="card-horizontal  cards_horizontal--orange d-flex align-items-center">
+          <div class="img-square-wrapper">
+              <img class="cards-horizontal-image" src="./images/Adopta_amigo_blog_home_4.jpg" alt="Card image cap">
+          </div>
+          <div class="card-body">
+            <h3><a class="cards_horizontal--link--a" href="./pages/nuestrosamigos.html">Lee más historias ></a></h3>
+          </div>
+      </div>
+      </div>
     </div>
   </div>
 </div>
