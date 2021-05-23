@@ -203,38 +203,3 @@
 }}
 }
 }
-
-
-
-
-
-.flip-box {
-    background-color: transparent;
-    perspective: 1000px;
-    &:hover &-inner {
-        transform: rotateY(180deg);
-      }
-    &-inner {
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-    }
-    &-front, &-back {
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-  &-back {
-    padding: 5rem 3rem 0rem 3rem;
-    position:absolute;    
-    text-align: center;
-    background-color:$white-color;
-    transform: rotateY(180deg);
-    border-radius: 2rem;
-  }
-  &--des{
-    font-size: 1rem;
-  }
-  &--title{
-    font-size: 1rem;
-    color: $primary-color;
-    font-weight: 600;
-  }}
