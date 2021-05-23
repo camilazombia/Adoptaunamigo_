@@ -1,7 +1,8 @@
 /*general*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
-a:link {
-  color: #ffff; }
+a {
+  color: #ffff;
+  text-decoration: none; }
 
 html, body {
   font-family: "Eastman Trial";
