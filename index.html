@@ -36,20 +36,20 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
 <!--NavItems-->
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav ml-auto">
-      <li class="nav-item active">
-        <a class="nav-link active" id="nav-item--link__active" href="index.html"></i> Inicio <span class="sr-only">(current)</span></a>
+      <li class="nav-item">
+        <a class="navbar-item navbar-item-active" href="index.html"></i> Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="nav-item--link" href="./pages/nuestrosamigos.html"></i> Nuestros Amigos</a>
+        <a class="navbar-item" href="./pages/nuestrosamigos.html"></i> Nuestros Amigos</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="nav-item--link" href="./pages/sobrenosotros.html"></i> Sobre Nosotros</a>
+        <a class="navbar-item" href="./pages/sobrenosotros.html"></i> Sobre Nosotros</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="nav-item--link" href="./pages/blog.html"></i> Blog</a>
+        <a class="navbar-item" href="./pages/blog.html"></i> Blog</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" id="nav-item--link" href="./pages/contacto.html"> </i> Contacto</a>
+        <a class="navbar-item" href="./pages/contacto.html"> </i> Contacto</a>
       </li>
     </div>
 </nav>
@@ -72,15 +72,16 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
     </div>
     <!--Banner image-->
     <div class="col-md-6 order-md-12 order-1 px-3">
-      <img class="banner-image mx-auto d-block" id="scale-up-bottom" src="./images/Adopta_amigo_Banner_1.png" alt="banner_perro">
+      <img class="banner-image mx-auto d-block" src="./images/Adopta_amigo_Banner_1.png" alt="banner_perro">
     </div>
   </div>
 </section>
 <!--Cards Vert-->
 <section class="container my-5 mx-auto">
   <div class="row justify-content-center">
-    <div class="col-md-4 col-sm-12 col-12 pb-3">
-      <div class="card">
+    <div class="col-md-4 col-sm-12 col-12 pb-3 flip-box">
+      <div class="card flip-box-inner">
+        <div class="flip-box-front">
         <img class="card-img-top cards-image" src="./images/Adopta_amigo_pato_.jpg" alt="Card image cap">
         <div class="card-body card_body">
           <h3 class="cards_title">paco,</h3>
@@ -90,9 +91,18 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
           <h5 class="cards-class">apadrinamiento</h5>
         </div>
       </div>
-    </div>
-    <div class="col-md-4 col-sm-12 col-12 pb-3">
-      <div class="card">
+        <div class="flip-box-back text-center">
+          <h3 class="flip-box--title">¿Qué necesita este amigo?</h3>
+          <p class="flip-box--des">Este animalito necesita un espacio amplio, que pueda salir mínimo dos veces al día, 
+            comida "ESPECIAL DE ANIMAL" y mucho amor.</p>
+            <h3 class="flip-box--title">¿Como Adoptaunamigo.co te apoya?</h3>
+            <p>Nosotros te apoyamos a conseguir la comida más económica y puedes visitar nuestro veterinario donde no te cobramos la consulta.</p>
+        </div>
+        </div>
+        </div>
+    <div class="col-md-4 col-sm-12 col-12 pb-3 flip-box">
+      <div class="card flip-box-inner">
+      <div class="flip-box-front">
       <img class="card-img-top cards-image" src="./images/Adopta_amigo_loretto_.jpg" alt="Card image cap">
         <div class="card-body card_body">
           <h3 class="cards_title">loretto,</h3>
@@ -100,13 +110,21 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
           <p class="cards_text">Lorem ipsum dolor sit amet,
             consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
           <h5 class="cards-class">apadrinamiento</h5>
+          </div>
+        </div>
+          <div class="flip-box-back text-center">
+            <h3 class="flip-box--title">¿Qué necesita este amigo?</h3>
+            <p class="flip-box--des">Este animalito necesita un espacio amplio, que pueda salir mínimo dos veces al día, 
+              comida "ESPECIAL DE ANIMAL" y mucho amor.</p>
+              <h3 class="flip-box--title">¿Como Adoptaunamigo.co te apoya?</h3>
+              <p>Nosotros te apoyamos a conseguir la comida más económica y puedes visitar nuestro veterinario donde no te cobramos la consulta.</p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-md-4 d-none d-sm-block" style="width: 18rem;">
+    <div class="col-md-4 d-none d-sm-block">
       <div class="card bg-orange">
       <img class="card-img-top cards-image" src="./images/Adopta_amigo_Button_pig.jpg" alt="Card image cap">
-        <div class="card-body card_body--orange" id="card_body--orange">
+        <div class="card-body card_body--orange">
           <h5 class="">
             <a class="cards_link--a" href="./pages/nuestrosamigos.html">Cónoce más amigos ></a>
           </h5>
@@ -121,17 +139,17 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
   <div class="row align-items-center">
     <div class="col-md-6 order-md-1 order-12">
       <!--Banner title-->
-      <h2 class="banner_title">Nuestros Amigos</h2>
+      <h2 class="banner_title">Sobre Nosotros</h2>
       <!--Banner body-->
-      <p class="banner_text"><bold class="banner_text--bold">Adoptaunamigo.co</bold> es un lugar donde podrás encontrar
-        amigos de todo el mundo, pero no cualquier tipo de amigo, los más fieles, divertidos,
-        cariñosos, nuestros amigos animalezcos!
+      <p class="banner_text">Somos una comunidad que ayuda a los animalitos a buscar un hogar,
+        o animalitos con cuidados especiales que requieren de alguna ayuda económica buscando
+        personitas que los apadrinen, puede ser con insumos médicos, medicina o alimento.
        </p>
        <button onclick="window.location.href='./pages/sobrenosotros.html'" class= "banner_text--button pulsate-btn">Cónoce más</button>
     </div>
     <!--Banner image-->
     <div class="col-md-6 order-md-12 order-1 px-3">
-      <img class="banner-image mx-auto d-block" id="scale-up-bottom" src="./images/Adopta_amigo_Banner_3.png" alt="banner_dog">
+      <img class="banner-image mx-auto d-block" src="./images/Adopta_amigo_Banner_3.png" alt="banner_dog">
     </div>
   </div>
 </section>
@@ -140,7 +158,7 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
 <!--Cards Horiz-->
 <section class="cards container mt-4">
   <div class="cards_header row col-12">
-      <h2 class="cards_header--title">Blog</h2>
+      <h2 class="cards_header--title pl-3">Blog</h2>
   </div>
 <div class="container-fluid">
   <div class="row">
@@ -222,17 +240,17 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
       <div class="row text-center d-flex justify-content-center">
         <div class="col-md-2">
           <h6 class="footer_legal">
-          <a class="link"href="#!">About us</a>
+          <a class="link" href="#!">Habeas Data</a>
           </h6>
         </div>
         <div class="col-md-2">
           <h6 class="footer_legal">
-          <a href="#!">Products</a>
+          <a href="#!">Términos & Condiciones</a>
           </h6>
         </div>
         <div class="col-md-2">
           <h6 class="footer_legal">
-          <a href="#!">Awards</a>
+          <a href="#!">Formatos</a>
           </h6>
         </div>
       </div>
@@ -240,25 +258,25 @@ un amigo como tú, ¡Ingresa ahora y se parte de ella!">
     <!-- Legales -->
       <div class="row text-center d-flex justify-content-center py-5">
         <div class="col-md-1">
-          <a class="footer_socialmedia--icon">
+          <a class="footer_socialmedia--icon" href="https://www.facebook.com/" target="_blank">
           <i class="footer_socialmedia--icon fab fa-facebook-square"></i>
           </a>
         </div>
         <div class="col-md-1">
-          <a class="footer_socialmedia--icon">
+          <a class="footer_socialmedia--icon" href="https://www.instagram.com/" target="_blank">
           <i class="footer_socialmedia--icon fab fa-instagram-square"></i>
           </a>
         </div>
         <div class="col-md-1">
-          <a class="footer_socialmedia--icon">
+          <a class="footer_socialmedia--icon" href="https://twitter.com/" target="_blank">
           <i class="footer_socialmedia--icon fab fa-twitter-square"></i>
           </a>
         </div>
       </div>
     <!-- /Legales -->
     <!-- Copyright -->
-      <div class="footer-copyright text-center py-3 bg-orange--ligth">COPYRIGHT © ALL RIGHTS RESERVED
-         <a href="https://mdbootstrap.com/"> ADOPTAUNAMIGO.CO</a>
+      <div class="footer-copyright text-center py-3 bg-orange--ligth">COPYRIGHT © TODOS LOS DERECHOS RESERVADOS
+         <a href="index.html" class="banner_text--bold"> ADOPTAUNAMIGO.CO</a>
       </div>
     <!-- /Copyright -->
     </footer>

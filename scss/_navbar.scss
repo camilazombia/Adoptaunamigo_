@@ -2,6 +2,9 @@
 /*navbar*/
 .navbar{
     background-color: $ligth-color;
+    &-toggler-icon{
+        background-image:url("../images/menu.svg");
+    }
     &_logo{ /*operaciones*/
         height: $rem-4/2;
         width: $width-auto;
@@ -17,26 +20,20 @@
     }
     
     &-item{
-        color: #666666; 
-        list-style-type: none;
-        padding: 10px 20px;
-    }
+        color: #666666;
+        display: block;
+        padding: 1rem 1rem;
+        text-transform:$text-uppercase;
+        font-weight: normal;
+        font-size: 0.8rem;
+         &:hover,
+         &:active,
+         &-active{
+        text-transform: $text-uppercase;
+        color:$primary-color;
+        font-weight: 600;
+        font-size: 0.8rem;
+        text-decoration: none;
 }
-#nav-item--link{
-    color: #666666;
-    text-transform:$text-uppercase;
-    font-weight: 400;
-    font-size: 0.8rem;
-     &:hover,
-     &__active{
-     text-transform: $text-uppercase;
-    color:$primary-color;
-    font-weight: 600;
-    font-size: 0.8rem;
-    }
 }
-
-
-.navbar-toggler-icon{
-    background-image:url("../images/menu.svg");
 }

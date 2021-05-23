@@ -1,4 +1,5 @@
 /*general*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 html, body {
   font-family: "Eastman Trial";
   background-color: #f3f3f3;
@@ -28,6 +29,8 @@ a {
 /*navbar*/
 .navbar {
   background-color: #f3f3f3; }
+  .navbar-toggler-icon {
+    background-image: url("../images/menu.svg"); }
   .navbar_logo {
     /*operaciones*/
     height: 2rem;
@@ -42,22 +45,17 @@ a {
     padding-top: 0.5rem; }
   .navbar-item {
     color: #666666;
-    list-style-type: none;
-    padding: 10px 20px; }
-
-#nav-item--link {
-  color: #666666;
-  text-transform: uppercase;
-  font-weight: 400;
-  font-size: 0.8rem; }
-  #nav-item--link:hover, #nav-item--link__active {
+    display: block;
+    padding: 1rem 1rem;
     text-transform: uppercase;
-    color: #ff6600;
-    font-weight: 600;
+    font-weight: normal;
     font-size: 0.8rem; }
-
-.navbar-toggler-icon {
-  background-image: url("../images/menu.svg"); }
+    .navbar-item:hover, .navbar-item:active, .navbar-item-active {
+      text-transform: uppercase;
+      color: #ff6600;
+      font-weight: 600;
+      font-size: 0.8rem;
+      text-decoration: none; }
 
 /** Footer **/
 .footer_quote {
@@ -123,18 +121,14 @@ a {
   .banner-image {
     width: 600px;
     height: auto; }
-  .banner--bold {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 16px;
-    padding-top: 15px;
-    letter-spacing: 0.5px;
-    text-transform: uppercase; }
   .banner_text {
     font-weight: 400;
     font-style: normal;
     font-size: 16px;
     padding-top: 15px; }
+    .banner_text--bold {
+      font-weight: 700;
+      text-transform: uppercase; }
     .banner_text--button {
       background-color: #f3f3f3;
       border: none;
@@ -164,30 +158,6 @@ a {
     font-size: 2rem; } }
 
 /*Cards*/
-.Adopta_amigo_blog_home_1 {
-  /*operaciones*/
-  Background-image: url("../images/Adopta_amigo_blog_home_1.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.Adopta_amigo_blog_home_2 {
-  /*operaciones*/
-  Background-image: url("../images/Adopta_amigo_blog_home_2.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.Adopta_amigo_blog_home_3 {
-  /*operaciones*/
-  Background-image: url("../images/Adopta_amigo_blog_home_3.jpg");
-  background-position: center;
-  background-size: cover; }
-
-.Adopta_amigo_blog_home_4 {
-  /*operaciones*/
-  Background-image: url("../images/Adopta_amigo_blog_home_4.jpg");
-  background-position: center;
-  background-size: cover; }
-
 .cards-horizontal {
   display: flex;
   flex: 1 1 auto; }
@@ -248,17 +218,28 @@ a {
   letter-spacing: 2px;
   display: inline-block; }
 
-.cards_link--a {
-  font-family: 'Eastman Trial';
-  font-weight: 600;
-  font-style: normal;
-  color: #fff;
-  font-size: 2.6rem;
-  line-height: 40px;
-  text-transform: uppercase; }
-  .cards_link--a:hover {
-    text-decoration: underline;
-    color: #fff; }
+.cards_link {
+  padding: 5px 30px 5px 30px; }
+  .cards_link--a {
+    font-family: 'Eastman Trial';
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+    font-size: 2.6rem;
+    line-height: 40px;
+    text-transform: uppercase; }
+    .cards_link--a:hover {
+      text-decoration: underline;
+      color: #fff; }
+  .cards_link_button--LinkImage {
+    width: 80%;
+    border-radius: 20px; }
+
+@media screen and (max-width: 900px) {
+  .cards .cards_link--a {
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: 0.2rem; } }
 
 @media screen and (max-width: 320px) {
   .cards-class {
@@ -351,21 +332,30 @@ a {
     .blog_link--a:hover {
       text-decoration: underline; }
 
-.cards_button--LinkImage {
-  width: 80%;
-  border-radius: 20px; }
-
-.cards_link {
-  padding: 5px 30px 5px 30px; }
-
-.cards_link {
-  padding: 5px 30px 5px 30px; }
-
-@media screen and (max-width: 900px) {
-  .cards_link--a {
-    font-size: 2rem;
-    line-height: 2rem;
-    letter-spacing: 0.2rem; } }
+.flip-box {
+  background-color: transparent;
+  perspective: 1000px; }
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg); }
+  .flip-box-inner {
+    transition: transform 0.8s;
+    transform-style: preserve-3d; }
+  .flip-box-front, .flip-box-back {
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .flip-box-back {
+    padding: 5rem 3rem 0rem 3rem;
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    transform: rotateY(180deg);
+    border-radius: 2rem; }
+  .flip-box--des {
+    font-size: 1rem; }
+  .flip-box--title {
+    font-size: 1rem;
+    color: #ff6600;
+    font-weight: 600; }
 
 /*Contacto*/
 .contact_title {
@@ -443,7 +433,7 @@ label {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-family: Arial, Helvetica, sans-serif; }
-  .form_input:hover :active {
+  .form_input:hover, .form_input:active {
     border: 1px solid #ff6600;
     color: #d39e7b; }
 
@@ -491,6 +481,13 @@ textarea, select, input, button {
   font-weight: normal;
   font-style: normal;
   font-size: 16px; }
+  .howto_text--link {
+    font-weight: 600;
+    color: #fff;
+    text-decoration: underline;
+    color: #fff; }
+    .howto_text--link:hover {
+      color: #ff990085; }
 
 /*
 -------------------------------------

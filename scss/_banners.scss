@@ -14,19 +14,17 @@
         height: auto;
     }
     
-    &--bold{
-        font-weight: 700;
-        font-style: normal;
-        font-size:16px;
-        padding-top: 15px;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-    }
+    
     &_text{
         font-weight: 400;
         font-style: normal;
         font-size:16px;
         padding-top: 15px;
+        &--bold{
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
     &--button{
         background-color: #f3f3f3;
         border: none;
